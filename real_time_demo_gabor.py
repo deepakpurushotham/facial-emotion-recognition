@@ -3,8 +3,8 @@ import cv2
 import pickle 
 from joblib import dump, load
 
-classifer = load('/Users/deepakpurushotham/Desktop/BE_major_project/fullStackProject/models/ck_gabor_normalized_float32_1.joblib')
-faceDet = cv2.CascadeClassifier("/Users/deepakpurushotham/Desktop/BE_major_project/Demo /code/haarcascade_frontalface_default.xml")
+classifer = load('ck_gabor_normalized_float32_1.joblib')
+faceDet = cv2.CascadeClassifier("haarcascade_frontalface_default.xml")
 
 def build_filters():
     filters = []
